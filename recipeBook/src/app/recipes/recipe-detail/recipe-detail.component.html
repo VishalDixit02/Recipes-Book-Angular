@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-xs-12">
     <img [src]="recipe.imagePath" alt="{{ recipe.name}}" class="img-responsive"
-    style="max-height: 300px;">
+         style="max-height: 300px;">
   </div>
 </div>
 <div class="row">
@@ -11,10 +11,10 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <div class="btn-group">
+    <div appDropdownDirective class="btn-group">
       <button
-        type="button"
-        class="btn btn-primary dropdown-toggle">
+        class="btn btn-primary dropdown-toggle"
+        data-toggle="dropdown" type="button">
         Manage Recipe <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
